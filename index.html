@@ -4,7 +4,7 @@
   <title>HSonlineEmpire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- MONETAG VERIFICATION (optional rehne de) -->
+  <!-- MONETAG VERIFICATION -->
   <meta name="monetag" content="54353a7085d6dca2e6ac7bc11d28030b">
 
   <style>
@@ -17,17 +17,17 @@
     }
 
     .box {
-      padding: 60px 20px;
+      padding: 40px 15px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .btn {
       display: block;
       margin: 15px auto;
-      padding: 15px 30px;
+      padding: 15px;
       width: 80%;
       max-width: 300px;
       background: #00ffcc;
@@ -35,13 +35,34 @@
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 0 15px #00ffcc;
     }
 
     .btn2 {
       background: orange;
-      box-shadow: 0 0 15px orange;
+    }
+
+    table {
+      width: 95%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background: #00ffcc;
+      color: black;
+    }
+
+    .coming {
+      color: orange;
+      font-weight: bold;
     }
 
     input, textarea {
@@ -64,7 +85,7 @@
     #success {
       display: none;
       color: lightgreen;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .whatsapp {
@@ -97,6 +118,32 @@
     ⚡ Earning Booster
   </a>
 
+  <h2>💼 Earning Categories</h2>
+
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Status</th>
+    </tr>
+
+    <tr><td>Crypto Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Game Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>YouTube Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Telegram Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Facebook Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Instagram Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Referral Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>App Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Survey Earn</td><td class="coming">Coming Soon</td></tr>
+    <tr><td>Task Earn</td><td class="coming">Coming Soon</td></tr>
+  </table>
+
+  <p>
+    📢 Yaha par aapko daily earning related updates milte rahenge 💰<br>
+    Koi bhi problem ho toh neeche contact kare 👍
+  </p>
+
+  <!-- CONTACT FORM -->
   <h2>📩 Contact / Feedback</h2>
 
   <form id="form">
@@ -109,29 +156,11 @@
   </form>
 
   <p id="success">✅ Message Sent Successfully!</p>
+
 </div>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/918699137090?text=Hello%20I%20want%20to%20join" class="whatsapp">💬</a>
-
-<!-- BACKGROUND MUSIC -->
-<audio id="bgMusic" loop autoplay>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-var music = document.getElementById("bgMusic");
-
-window.addEventListener("load", function() {
-  music.volume = 0.2;
-
-  music.play().catch(function() {
-    document.addEventListener("click", function() {
-      music.play();
-    }, { once: true });
-  });
-});
-</script>
+<a href="https://wa.me/918699137090?text=Hello%20I%20need%20help" class="whatsapp">💬</a>
 
 <!-- FORM SCRIPT -->
 <script>
