@@ -3,38 +3,147 @@
 <head>
   <title>HSonlineEmpire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MONETAG VERIFICATION -->
+  <meta name="monetag" content="54353a7085d6dca2e6ac7bc11d28030b">
+
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: linear-gradient(135deg, #000000, #1e3c72);
+      background: linear-gradient(135deg,#000,#1e3c72);
       color: white;
       text-align: center;
     }
+
     .box {
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
+
     h1 {
       font-size: 30px;
     }
+
     p {
-      font-size: 18px;
+      font-size: 16px;
     }
-    .btn {
-      background: #ffcc00;
+
+    input, textarea {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+    }
+
+    button {
       padding: 12px 25px;
+      border: none;
+      background: yellow;
+      color: black;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #00ffcc;
       color: black;
       text-decoration: none;
       border-radius: 25px;
-      display: inline-block;
-      margin-top: 20px;
       font-weight: bold;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+
+    .btn2 {
+      background: orange;
+      box-shadow: 0 0 10px orange;
+    }
+
+    #success {
+      display: none;
+      color: lightgreen;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 0 10px #25D366;
     }
   </style>
 </head>
+
 <body>
 
 <div class="box">
+  <h1>🌍 HSonlineEmpire</h1>
+  <p>Start Your Online Earning Journey 💸</p>
+
+  <!-- PART TIME JOB BUTTON -->
+  <a href="https://socialaddworld.us.com/Registration.aspx?spnid=S3D4E3M04" class="btn">
+    🚀 Part Time Job Join Now
+  </a>
+
+  <br>
+
+  <!-- SECOND BUTTON -->
+  <a href="https://socialaddworld.us.com/Registration.aspx?spnid=S3D4E3M04" class="btn btn2">
+    💰 Start Earning Now
+  </a>
+
+  <h2>📩 Contact / Feedback</h2>
+
+  <!-- FORM -->
+  <form id="form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="mobile" placeholder="Mobile Number" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="success">✅ Message Sent Successfully!</p>
+</div>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/918699137090?text=Hello%20I%20want%20to%20join" class="whatsapp">💬</a>
+
+<script>
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  fetch("https://formspree.io/f/meevadky", {
+    method: "POST",
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.reset();
+      document.getElementById('success').style.display = "block";
+    } else {
+      alert("❌ Error! Try again");
+    }
+  });
+});
+</script>
+
+</body>
+</html><div class="box">
   <h1>HSonlineEmpire 🌍</h1>
   <p>Start Your Online Earning Journey 💸</p>
   <p>Join Our Network Today 🚀</p>
