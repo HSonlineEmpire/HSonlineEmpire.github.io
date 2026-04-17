@@ -7,9 +7,6 @@
   <!-- MONETAG VERIFICATION -->
   <meta name="monetag" content="54353a7085d6dca2e6ac7bc11d28030b">
 
-  <!-- PUSH NOTIFICATIONS -->
-  <script src="https://5gvci.com/act/files/tag.min.js?z=10889138" data-cfasync="false" async></script>
-
   <style>
     body {
       margin: 0;
@@ -19,53 +16,50 @@
       text-align: center;
     }
 
+    .top-ad {
+      width: 100%;
+      min-height: 60px;
+      background: #111;
+    }
+
     .box {
       padding: 50px 20px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 15px 30px;
+      display: block;
+      margin: 20px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 300px;
       background: #00ffcc;
       color: black;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 0 15px #00ffcc;
+      box-shadow: 0 0 10px #00ffcc;
     }
 
-    input, textarea {
-      width: 90%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 10px;
-      border: none;
+    .btn2 {
+      background: orange;
+      box-shadow: 0 0 10px orange;
     }
 
-    button {
-      padding: 12px 25px;
-      border: none;
-      background: yellow;
-      color: black;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    #success {
-      display: none;
-      color: lightgreen;
-      margin-top: 15px;
+    .bottom-ad {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      min-height: 60px;
+      background: #111;
     }
 
     .whatsapp {
       position: fixed;
-      bottom: 20px;
+      bottom: 80px;
       right: 20px;
       background: #25D366;
       color: white;
@@ -79,6 +73,9 @@
 
 <body>
 
+<!-- TOP BANNER -->
+<div class="top-ad"></div>
+
 <div class="box">
   <h1>🌍 HSonlineEmpire</h1>
   <p>Start Your Online Earning Journey 💸</p>
@@ -88,64 +85,42 @@
     🚀 Start Earning Now
   </a>
 
-  <h2>📩 Contact / Feedback</h2>
-
-  <form id="form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="tel" name="mobile" placeholder="Mobile Number" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p id="success">✅ Message Sent Successfully!</p>
+  <!-- BOOSTER BUTTON -->
+  <a href="https://omg10.com/4/10889313" class="btn btn2">
+    ⚡ Earning Booster
+  </a>
 </div>
+
+<!-- BOTTOM BANNER -->
+<div class="bottom-ad"></div>
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/918699137090?text=Hello%20I%20want%20to%20join" class="whatsapp">💬</a>
 
-<!-- POPUNDER AD -->
-<script>
-(function(s){
-  s.dataset.zone='10889139',
-  s.src='https://al5sm.com/tag.min.js'
-})(document.body.appendChild(document.createElement('script')));
-</script>
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
-<!-- VIGNETTE AD -->
+<!-- MONETAG IN-PAGE PUSH (BANNER STYLE) -->
 <script>
 (function(s){
-  s.dataset.zone='10889141',
-  s.src='https://n6wxm.com/vignette.min.js'
-})(document.body.appendChild(document.createElement('script')));
-</script>
-
-<!-- IN-PAGE PUSH -->
-<script>
-(function(s){
-  s.dataset.zone='10889143',
+  s.dataset.zone='10889417',
   s.src='https://nap5k.com/tag.min.js'
 })(document.body.appendChild(document.createElement('script')));
 </script>
 
+<!-- MUSIC SCRIPT -->
 <script>
-const form = document.getElementById('form');
+var music = document.getElementById("bgMusic");
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
+window.addEventListener("load", function() {
+  music.volume = 0.2; // light volume
 
-  fetch("https://formspree.io/f/meevadky", {
-    method: "POST",
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      form.reset();
-      document.getElementById('success').style.display = "block";
-    } else {
-      alert("Error! Try again");
-    }
+  music.play().catch(function() {
+    document.addEventListener("click", function() {
+      music.play();
+    }, { once: true });
   });
 });
 </script>
